@@ -1,0 +1,172 @@
+<div className="filter-container">
+    <div className="filter-item">
+        <div className="filter-header" onClick={toggleFilterBody}>
+            <h5 className="filter-title">
+                Sort By
+            </h5>
+
+            <i className="bi-chevron-up" onClick={toggleFilterBody}></i>
+        </div>
+        <div className={`filter-body ${filterBody ? 'show' : ''}`}>
+            <div className="filter-type">
+                <input type="radio" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">Newest</label>
+            </div>
+            <div className="filter-type">
+                <input type="radio" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">Price Low To High</label>
+            </div>
+            <div className="filter-type">
+                <input type="radio" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">Price High To Low</label>
+            </div>
+            <div className="filter-type">
+                <input type="radio" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">Top Related</label>
+            </div>
+
+        </div>
+    </div>
+
+    <div className="filter-item">
+        <div className="filter-header" >
+            <h5 className="filter-title">
+                Category
+            </h5>
+
+            <i className="bi-chevron-up" ></i>
+        </div>
+        <div className={`filter-body ${filterBody ? 'show' : ''}`}>
+            <div className="filter-type">
+                <input type="checkbox" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">Tops</label>
+            </div>
+            <div className="filter-type">
+                <input type="checkbox" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">Jackets</label>
+            </div>
+            <div className="filter-type">
+                <input type="checkbox" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">Bottoms</label>
+            </div>
+            <div className="filter-type">
+                <input type="checkbox" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">Underwear</label>
+            </div>
+            <div className="filter-type">
+                <input type="checkbox" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">Accessories</label>
+            </div>
+
+        </div>
+    </div>
+    <div className="filter-item">
+        <div className="filter-header" onClick={toggleFilterBody}>
+            <h5 className="filter-title">
+                Price
+            </h5>
+
+            <i className="bi-chevron-up" onClick={toggleFilterBody}></i>
+        </div>
+        <div className={`filter-body ${filterBody ? 'show' : ''}`}>
+            <div className="filter-type">
+                <input type="checkbox" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">$0 - $25</label>
+            </div>
+            <div className="filter-type">
+                <input type="checkbox" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">$25 - $50</label>
+            </div>
+            <div className="filter-type">
+                <input type="checkbox" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">$50 - $100</label>
+            </div>
+            <div className="filter-type">
+                <input type="checkbox" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">$100 - $150</label>
+            </div>
+            <div className="filter-type">
+                <input type="checkbox" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">$150 - $300</label>
+            </div>
+            <div className="filter-type">
+                <input type="checkbox" name="sort-by" className="check-box-filter" />
+                <label htmlFor="" className="filter-label">$300+</label>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<style>
+        .filter-container {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 74px;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        max-height: 100vh;
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        .filter-item{
+            position: relative;
+            padding-left: 24px;
+            padding-right: 24px;
+            background-color: white;
+            width: 100%;
+            .filter-header{
+                border-top: solid 1px #9e9898;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 20px;
+                padding-bottom: 16px;
+                .filter-title{
+                    font-size: 15px;
+                    color: black;
+
+                }
+            }
+            .filter-body {
+                transition: height 0.3s;
+                height: 0;
+                overflow: hidden;
+                .filter-type{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 22px;
+                    .check-box-filter{
+                        width: 16px;
+                        height: 16px;
+                        
+
+                    }
+
+                    .filter-label{
+                        margin-left: 14px;
+                        margin-bottom: 0;
+                        color: #696969;
+
+
+                    }
+                }
+
+            }
+            .filter-body.show{
+                height: 100%;
+            }
+            
+
+        }
+
+    }
+    .filter-container::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+
+</style>

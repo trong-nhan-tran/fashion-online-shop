@@ -1,0 +1,20 @@
+.crate-product-body{
+    display: flex;
+    gap: 16px;
+    
+    .input-form-add{
+        margin-left: 16px;
+        width: 50%;
+        
+    
+    }
+    
+    .thumbnail-container{
+        width: 50%;
+        img{
+            width: 400px;
+        }
+    }
+
+}
+

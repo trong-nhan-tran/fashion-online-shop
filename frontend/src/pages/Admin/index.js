@@ -1,0 +1,11 @@
+export { default as AdminLayout } from './AdminLayout/Admin';
+export { default as CreateProduct } from './CreateProduct/CreateProduct';
+export { default as OrderManager } from './OrderManager/OrderManager';
+export { default as ProductManager } from './ProductsManager/ProductsManager';
+export { default as UserManager } from './UsersManager/UsersManager';
+export { default as ProductColors } from './ProductColors/ProductColors';
+export { default as Variants } from './Variants/Variants';
+export { default as CreateUser } from './CreateUser/CreateUser';
+export { default as UpdateProduct } from './UpdateProduct/UpdateProduct';
+export { default as OrderDetail } from './OrderDetail/OrderDetail';
+export { default as UserDetail } from './UserDetail/UserDetail';

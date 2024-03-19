@@ -1,0 +1,60 @@
+.register-container {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+
+    .register-content {
+        display: flex;
+        flex-direction: column;
+        width: 520px;
+        max-width: 100%;
+        height: 100%;
+        background-color: white;
+        align-items: center;
+        color: black;
+        border: none;
+        margin-top: 12px;
+        margin-bottom: 56px;
+
+        .register-header {
+            display: flex;
+            border-bottom: none;
+            width: 85%;
+        }
+
+        .register-body {
+            width: 85%;
+            form{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+    
+                .policy {
+                    width: 100%;
+                    display: flex;
+                    margin-top: 16px;
+    
+                    .check-box {
+                        width: 16px;
+                        height: 16px;
+                        margin-top: 2px;
+                    }
+    
+                    label {
+                        margin-left: 8px;
+                        a {
+                            color: black;
+                            text-decoration: underline;
+                        }
+                    }
+    
+                }
+            }
+
+
+        }
+
+    }
+
+}

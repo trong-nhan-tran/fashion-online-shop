@@ -1,0 +1,33 @@
+.modal-menu {
+    .menu-content {
+        background-color: black;
+        color: white;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-out;
+        .menu-header{
+            width: 80%;
+            margin-bottom: 12px;
+        }
+
+        .menu-body{
+            width: 80%;
+            div {
+                padding-top: 12px;
+                padding-bottom: 12px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 24px;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.menu-content.open {
+    transform: translateX(0);
+}

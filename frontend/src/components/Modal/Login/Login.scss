@@ -1,0 +1,68 @@
+.modal-login {
+    .login-content {
+        transform: translateX(100%);
+        transition: transform 0.5s ease-out;
+        top: 0;
+        right: 0;
+        background-color: white;
+        color: black;
+
+        .login-header {
+            margin-top: 56px;
+        }
+
+        .modal-body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            form {
+                width: 100%;
+                .remember-forgot {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 16px;
+
+                    .remember {
+                        display: flex;
+
+                        .check-box {
+                            width: 16px;
+                            height: 16px;
+                            margin-top: 2px;
+                        }
+
+                        label {
+                            margin-left: 8px;
+                        }
+                    }
+
+                    a {
+                        color: black;
+                        text-decoration: underline;
+                    }
+                }
+
+
+
+            }
+
+            .account-question {
+                margin-top: 16px;
+
+                a {
+                    color: black;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+.login-content.open {
+    transform: translateX(0);
+}

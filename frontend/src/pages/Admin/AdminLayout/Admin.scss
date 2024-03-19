@@ -1,0 +1,134 @@
+.admin-body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+
+    .manager-main-content {
+        width: 80%;
+        padding-top: 16px;
+
+        .manager-header {
+            margin-left: 16px;
+            margin-bottom: 16px;
+        }
+
+        .manager-body {
+            margin-left: 16px;
+            width: 100%;
+
+            .action-search-container {
+                width: 100%;
+                display: flex;
+
+                .search-box-input {
+                    padding-left: 8px;
+                    height: 36px;
+                    width: 400px;
+                    border-radius: 3px;
+                    font-size: 18px;
+                }
+
+                .button-submit {
+                    margin-left: 8px;
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    background-color: black;
+                    color: white;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    text-decoration: none;
+
+                    i {
+                        font-size: 20px;
+                    }
+
+                    span {
+                        margin-left: 4px;
+                    }
+
+                }
+
+                .button-submit:hover {
+                    background-color: #464646;
+                }
+
+
+            }
+
+            .main-table {
+                margin-top: 20px;
+                width: 100%;
+                font-size: 18px;
+                border-color: black;
+                border: solid 1px;
+                border-collapse: collapse;
+
+                thead {
+                    .table-row-header {
+                        background-color: black;
+                        color: white;
+
+                        td {
+                            padding: 8px 8px 8px 8px;
+                            border: solid 1px black;
+                        }
+                    }
+
+                }
+
+                tbody {
+                    .table-row {
+                        border: solid 1px black;
+
+                        .action-button-container {
+                            span {
+                                margin-right: 10px;
+                                font-size: 20px;
+                            }
+
+                            span:hover {
+                                cursor: pointer;
+                                color: red;
+
+                            }
+                        }
+
+                        .name-and-image-product {
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                width: 50px;
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+
+                    .table-row:hover {
+                        background-color: #cccccc;
+                    }
+
+                    tr {
+                        td {
+                            padding: 8px 8px 8px 8px;
+                            border: solid 1px black;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
+
+.row-two-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

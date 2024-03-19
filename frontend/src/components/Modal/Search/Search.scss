@@ -1,0 +1,41 @@
+.modal-search {
+    .search-content {
+        background-color: black;
+        color: white;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-out;
+        .search-header{
+            width: 80%;
+            margin-bottom: 12px;
+            margin-top: 40px;
+            .search-box{
+                height: 32px;  
+                font-size: 20px;
+                display: flex;
+                .search-icon{
+                    cursor: pointer;
+
+                }
+                input{
+                    margin-left: 10px;
+                    color: white;
+                    font-size: 20px;
+                    height: 100%;
+                    background-color: black;
+                    outline: none;
+                    border: none;
+                    
+                }
+            }
+        }
+
+        .search-body{
+            width: 80%;
+
+        }
+    }
+}
+
+.search-content.open {
+    transform: translateX(0);
+}

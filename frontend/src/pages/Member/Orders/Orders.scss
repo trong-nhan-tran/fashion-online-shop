@@ -1,0 +1,111 @@
+.orders-list {
+    width: 100%;
+
+    .order-item {
+        width: 100%;
+        border: solid 1px #cccccc;
+        border-radius: 3px;
+        padding: 12px 12px 12px 12px;
+        margin-bottom: 20px;
+
+        .order-item-header {
+            display: flex;
+            justify-content: space-between;
+
+            .order-number {
+                text-transform: uppercase;
+                margin-bottom: 8px;
+            }
+
+            .button-cancel-order {
+                height: auto;
+                width: auto;
+                margin: 0;
+                cursor: pointer;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .button-cancel-order:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .order-detail {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+
+            .order-detail-item {
+                .order-detail-item-title {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .product-of-item-table{
+            margin-top: 16px;
+            display: flex;
+            overflow-x: auto;
+            table {
+                border-top: solid 1px #cccccc;
+                padding-top: 10px;
+                width: 100%;
+                min-width: 650px;
+                thead{
+                    .table-row-header{
+                        .table-column-header{
+                            font-weight: 600;
+                        }
+                    }
+    
+                }
+                tbody {
+                    .table-row-product{
+
+                        .column-2{
+                            max-width: 240px;
+                            .product-name{
+                                display: flex;
+                                align-items: center;
+                                img {
+                                    width: 60px;
+                                    margin-right: 12px;
+                                }
+
+                            }
+                        }
+
+                    }
+    
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 63.9375em) {
+    .orders-list {
+        .order-item {
+            .order-detail {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            // .products-of-order{
+            //     display: block;
+            //     .order-product-item{
+            //         flex-basis: 60px;
+            //         display: flex;
+            //         .product-image {
+            //             width: 80px;
+            //         }
+            //     }
+            // }
+
+        }
+    }
+
+}

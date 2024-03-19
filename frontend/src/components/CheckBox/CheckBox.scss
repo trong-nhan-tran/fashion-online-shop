@@ -1,0 +1,16 @@
+.check-box-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+
+    .check-box-input {
+        width: 16px;
+        height: 16px;
+    }
+
+    .check-box-label {
+        margin-left: 14px;
+        margin-bottom: 0;
+        color: #696969;
+    }
+}

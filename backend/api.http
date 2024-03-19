@@ -1,0 +1,51 @@
+POST   http://localhost:5000/api/category/add
+Content-Type: application/json
+
+{
+    "category_value": "Kids"
+}
+
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "first_name": "Nhân",
+    "last_name": "Tran",
+    "email": "nhantran@gmail.com",
+    "password": "123456"
+}
+
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "nhantran@gmail.com",
+    "password": "123456"
+    
+}
+###
+
+GET  http://localhost:5000/api/user
+Authorization: Bear eyJhbGciOiJIddUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiZW1haWwiOiJuaGFudHJhbkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRtNkguQWFkSVJBUHNab1gvYXdteklPUjNjTldFZjNjWEJrSGk0NklEaE95ZWUzQlBOeDJnNiIsInJvbGUiOiJSMiIsImlhdCI6MTcwMDI5NjA3NSwiZXhwIjoxNzAwMjk2MDgwfQ.VPppxJwFRMyACu6Jbi62UCXRTAxB1p0yX029c-HZYig
+
+GET  http://localhost:5000/api/user/getuserlist
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiZW1haWwiOiJuaGFudHJhbkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRWblZhcUxxQkp1ZTgzaVVRT3guLnlPbjNUeXRhLllxMllBQzNrNlQwOWc4b2s2QWFxS2NWTyIsInJvbGUiOiJSMSIsImlhdCI6MTY5OTk4ODM0NCwiZXhwIjoxNzAwNDIwMzQ0fQ.fHq116KOYWzMNDm7fE7EFKbs3oKRs1jcWfigrUlMzSI
+
+###
+ 
+GET  http://localhost:5000/api/product?name=product 
+###
+ 
+post  http://localhost:5000/api/product/addproduct
+Content-Type: application/json
+
+{
+    "product_name": "product 2",
+    "description": "product 2 description",
+    "price": 99.99,
+    "available": 8
+}

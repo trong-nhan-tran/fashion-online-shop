@@ -1,0 +1,33 @@
+.profile-container{
+    padding-top: 68px;
+    margin-bottom: 40px;
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    .left-nav{
+        width: 20%;
+    }
+    .right-content{
+        width: 80%;
+        .top-header{
+            border-bottom: solid 1px #cccccc;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .profile-container{
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+        .left-nav{
+            width: 100%;
+        }
+        .right-content{
+            width: 100%;
+        }
+    }
+}

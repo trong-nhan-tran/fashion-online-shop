@@ -1,0 +1,25 @@
+.sidebar-admin {
+    font-size: 22px;
+    margin-right: 20px;
+    .sidebar-body-item {
+        padding: 8px 40px;
+        cursor: pointer;
+        display: block;
+        color: black;
+        text-decoration: none;
+
+        .sidebar-body-item-title {
+            margin-left: 16px;
+        }
+    }
+
+    .sidebar-body-item:hover {
+        background-color: #cccccc;
+
+    }
+
+    .sidebar-body-item.active {
+        background-color: #cccccc;
+    }
+
+}
