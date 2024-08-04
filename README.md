@@ -4,7 +4,7 @@ This repository contains both the frontend and backend code for the Fashion Web 
 
 ## Table of Contents
 
-- [Project Structure](#project-structure)
+- [Application Interface ](#application-interface)
 - [Technologies Used](#technologies-used)
 - [Setup Instructions](#setup-instructions)
 - [Scripts](#scripts)
@@ -12,7 +12,7 @@ This repository contains both the frontend and backend code for the Fashion Web 
 - [Contributing](#contributing)
 - [License](#license)
 
-## Project Structure
+## Application Interface 
 
 ![image](https://github.com/trongnhanbro/fashion-online-shop/assets/118974931/df939205-510f-47b1-9b4e-de7daf843745)
 ![image](https://github.com/trongnhanbro/fashion-online-shop/assets/118974931/d295e91b-cc35-4d03-bccc-52998ed93697)
@@ -62,10 +62,17 @@ This repository contains both the frontend and backend code for the Fashion Web 
     DB_NAME=your_database_name
     JWT_SECRET=your_jwt_secret
     ```
-4. Start the backend server:
+4. Setup the database:
+    ```sh
+    npx sequelize-cli db:create
+    ```
+5. Run migrations to create tables:
+    ```sh
+    npx sequelize-cli db:migrate
+    ```
+6. Start the backend server:
     ```sh
     npm start
-    ```
 
 ### Frontend Setup
 1. Navigate to the `frontend` directory:
